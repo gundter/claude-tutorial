@@ -89,6 +89,19 @@
       "isRecurrenceInstance": false,
       "createdAt": "2025-01-15T10:00:00.000Z",
       "updatedAt": "2025-01-15T10:00:00.000Z"
+    },
+    {
+      "id": "chore-7668b73d-1d7a-4315-872e-7461666e29d8",
+      "title": "Water Office Plants",
+      "description": "Water all plants in the common areas",
+      "assigneeId": "tm-002",
+      "status": "completed",
+      "dueDate": "2026-01-18",
+      "recurrence": null,
+      "parentChoreId": "chore-002",
+      "isRecurrenceInstance": true,
+      "createdAt": "2026-01-18T20:08:34.546Z",
+      "updatedAt": "2026-01-18T20:12:55.805Z"
     }
   ]
 }
