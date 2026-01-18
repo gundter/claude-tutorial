@@ -26,7 +26,13 @@ const selectedDate = ref<string | null>(null);
 
 // Detail panel state
 const showDetailPanel = ref(false);
-const selectedChore = ref<Chore | null>(null);
+const selectedChoreId = ref<string | null>(null);
+
+// Get selected chore from store reactively
+const selectedChore = computed(() => {
+  if (!selectedChoreId.value) return null;
+  return choreStore.getById(selectedChoreId.value) || null;
+});
 
 // Generate calendar days
 const calendarDays = computed<CalendarDay[]>(() => {
@@ -73,7 +79,7 @@ function handleDayClick(dateStr: string) {
 }
 
 function handleChoreClick(chore: Chore) {
-  selectedChore.value = chore;
+  selectedChoreId.value = chore.id;
   showDetailPanel.value = true;
 }
 
@@ -98,7 +104,7 @@ function closeModal() {
 
 function closeDetailPanel() {
   showDetailPanel.value = false;
-  selectedChore.value = null;
+  selectedChoreId.value = null;
 }
 
 async function handleChoreSaved() {

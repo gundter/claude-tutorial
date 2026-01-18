@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue';
-import { format } from 'date-fns';
+import { format, parseISO } from 'date-fns';
 import { useChoreStore } from '@/stores/choreStore';
 import { useTeamStore } from '@/stores/teamStore';
 import type { Chore, ChoreStatus } from '@/types';
@@ -28,7 +28,7 @@ const assignee = computed(() => {
 });
 
 const formattedDueDate = computed(() => {
-  return format(new Date(props.chore.dueDate), 'EEEE, MMMM d, yyyy');
+  return format(parseISO(props.chore.dueDate), 'EEEE, MMMM d, yyyy');
 });
 
 const recurrenceText = computed(() => {

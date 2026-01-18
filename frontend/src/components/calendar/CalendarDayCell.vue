@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { computed } from 'vue';
-import { format, isBefore, startOfDay } from 'date-fns';
+import { format, isBefore, startOfDay, parseISO } from 'date-fns';
 import type { CalendarDay, Chore } from '@/types';
 import ChoreBadge from './ChoreBadge.vue';
 
@@ -33,7 +33,7 @@ const moreCount = computed(() => {
 
 function isOverdue(chore: Chore): boolean {
   if (chore.status === 'completed') return false;
-  return isBefore(startOfDay(new Date(chore.dueDate)), startOfDay(new Date()));
+  return isBefore(startOfDay(parseISO(chore.dueDate)), startOfDay(new Date()));
 }
 
 function handleChoreClick(event: Event, chore: Chore) {

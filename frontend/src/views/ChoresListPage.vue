@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref, onMounted, computed } from 'vue';
-import { format, isBefore, startOfDay } from 'date-fns';
+import { format, isBefore, startOfDay, parseISO } from 'date-fns';
 import { useChoreStore } from '@/stores/choreStore';
 import { useTeamStore } from '@/stores/teamStore';
 import type { Chore } from '@/types';
@@ -23,7 +23,7 @@ const sortedChores = computed(() => {
 
 function isOverdue(chore: Chore): boolean {
   if (chore.status === 'completed') return false;
-  return isBefore(startOfDay(new Date(chore.dueDate)), startOfDay(new Date()));
+  return isBefore(startOfDay(parseISO(chore.dueDate)), startOfDay(new Date()));
 }
 
 function getAssigneeName(assigneeId: string | null): string {
@@ -43,7 +43,7 @@ function getAssigneeAvatar(assigneeId: string | null): { color: string; initial:
 }
 
 function formatDueDate(date: string): string {
-  return format(new Date(date), 'MMM d, yyyy');
+  return format(parseISO(date), 'MMM d, yyyy');
 }
 
 function handleAddChore() {
