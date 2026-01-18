@@ -1,0 +1,10 @@
+{
+  "projectName": "Office Chore Management App",
+  "projectType": "brownfield",
+  "currentMilestone": "v1.0",
+  "milestoneGoal": "Fix critical bugs and add comprehensive test coverage",
+  "currentPhase": 1,
+  "status": "executing",
+  "createdAt": "2026-01-18",
+  "updatedAt": "2026-01-18"
+}

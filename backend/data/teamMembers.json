@@ -1,0 +1,28 @@
+{
+  "teamMembers": [
+    {
+      "id": "tm-001",
+      "name": "Alice Johnson",
+      "email": "alice@company.com",
+      "avatar": "#3B82F6",
+      "createdAt": "2025-01-01T10:00:00.000Z",
+      "updatedAt": "2025-01-01T10:00:00.000Z"
+    },
+    {
+      "id": "tm-002",
+      "name": "Bob Smith",
+      "email": "bob@company.com",
+      "avatar": "#10B981",
+      "createdAt": "2025-01-01T10:00:00.000Z",
+      "updatedAt": "2025-01-01T10:00:00.000Z"
+    },
+    {
+      "id": "tm-003",
+      "name": "Carol Williams",
+      "email": "carol@company.com",
+      "avatar": "#F59E0B",
+      "createdAt": "2025-01-01T10:00:00.000Z",
+      "updatedAt": "2025-01-01T10:00:00.000Z"
+    }
+  ]
+}
