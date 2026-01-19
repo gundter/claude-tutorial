@@ -5,20 +5,20 @@
       "title": "Clean Kitchen",
       "description": "Wipe counters, clean sink, empty dishwasher",
       "assigneeId": "tm-001",
-      "status": "pending",
+      "status": "completed",
       "dueDate": "2025-01-20",
       "recurrence": null,
       "parentChoreId": null,
       "isRecurrenceInstance": false,
       "createdAt": "2025-01-15T10:00:00.000Z",
-      "updatedAt": "2025-01-15T10:00:00.000Z"
+      "updatedAt": "2026-01-19T15:39:41.692Z"
     },
     {
       "id": "chore-002",
       "title": "Water Office Plants",
       "description": "Water all plants in the common areas",
       "assigneeId": "tm-002",
-      "status": "pending",
+      "status": "completed",
       "dueDate": "2025-01-20",
       "recurrence": {
         "type": "weekly",
@@ -37,20 +37,20 @@
       "parentChoreId": null,
       "isRecurrenceInstance": false,
       "createdAt": "2025-01-15T10:00:00.000Z",
-      "updatedAt": "2025-01-15T10:00:00.000Z"
+      "updatedAt": "2026-01-19T15:39:42.837Z"
     },
     {
       "id": "chore-003",
       "title": "Restock Office Supplies",
       "description": "Check and restock printer paper, pens, and sticky notes",
       "assigneeId": "tm-003",
-      "status": "in_progress",
+      "status": "completed",
       "dueDate": "2025-01-18",
       "recurrence": null,
       "parentChoreId": null,
       "isRecurrenceInstance": false,
       "createdAt": "2025-01-10T10:00:00.000Z",
-      "updatedAt": "2025-01-17T14:30:00.000Z"
+      "updatedAt": "2026-01-19T15:39:40.293Z"
     },
     {
       "id": "chore-004",
@@ -70,7 +70,7 @@
       "title": "Monthly Kitchen Deep Clean",
       "description": "Clean refrigerator, microwave, and coffee machine thoroughly",
       "assigneeId": "tm-002",
-      "status": "pending",
+      "status": "completed",
       "dueDate": "2025-01-31",
       "recurrence": {
         "type": "monthly",
@@ -88,7 +88,7 @@
       "parentChoreId": null,
       "isRecurrenceInstance": false,
       "createdAt": "2025-01-15T10:00:00.000Z",
-      "updatedAt": "2025-01-15T10:00:00.000Z"
+      "updatedAt": "2026-01-19T15:39:43.909Z"
     },
     {
       "id": "chore-7668b73d-1d7a-4315-872e-7461666e29d8",
@@ -102,6 +102,71 @@
       "isRecurrenceInstance": true,
       "createdAt": "2026-01-18T20:08:34.546Z",
       "updatedAt": "2026-01-18T20:12:55.805Z"
+    },
+    {
+      "id": "chore-07fa85a5-dec3-446f-9c13-0c34c4cd571b",
+      "title": "Paperwork",
+      "description": null,
+      "assigneeId": "tm-001",
+      "status": "completed",
+      "dueDate": "2026-01-07",
+      "recurrence": null,
+      "parentChoreId": null,
+      "isRecurrenceInstance": false,
+      "createdAt": "2026-01-19T15:38:42.317Z",
+      "updatedAt": "2026-01-19T15:39:13.154Z"
+    },
+    {
+      "id": "chore-9ced625b-36e6-4856-9419-9f86c51a128f",
+      "title": "Water Office Plants",
+      "description": "Water all plants in the common areas",
+      "assigneeId": "tm-002",
+      "status": "completed",
+      "dueDate": "2026-01-07",
+      "recurrence": null,
+      "parentChoreId": "chore-002",
+      "isRecurrenceInstance": true,
+      "createdAt": "2026-01-19T15:38:46.298Z",
+      "updatedAt": "2026-01-19T15:38:52.016Z"
+    },
+    {
+      "id": "chore-a5344a77-be8b-4da4-afd4-b1244cac593d",
+      "title": "Water Office Plants",
+      "description": "Water all plants in the common areas",
+      "assigneeId": "tm-002",
+      "status": "completed",
+      "dueDate": "2026-01-14",
+      "recurrence": null,
+      "parentChoreId": "chore-002",
+      "isRecurrenceInstance": true,
+      "createdAt": "2026-01-19T15:39:25.043Z",
+      "updatedAt": "2026-01-19T15:39:25.043Z"
+    },
+    {
+      "id": "chore-e4745751-4f1a-43fe-9e03-24527c5a64d0",
+      "title": "Water Office Plants",
+      "description": "Water all plants in the common areas",
+      "assigneeId": "tm-002",
+      "status": "completed",
+      "dueDate": "2026-01-04",
+      "recurrence": null,
+      "parentChoreId": "chore-002",
+      "isRecurrenceInstance": true,
+      "createdAt": "2026-01-19T15:39:27.356Z",
+      "updatedAt": "2026-01-19T15:39:27.356Z"
+    },
+    {
+      "id": "chore-dd81519b-257c-4c53-8a76-8ebe800342d1",
+      "title": "Water Office Plants",
+      "description": "Water all plants in the common areas",
+      "assigneeId": "tm-002",
+      "status": "completed",
+      "dueDate": "2026-01-11",
+      "recurrence": null,
+      "parentChoreId": "chore-002",
+      "isRecurrenceInstance": true,
+      "createdAt": "2026-01-19T15:39:29.089Z",
+      "updatedAt": "2026-01-19T15:39:29.089Z"
     }
   ]
 }
